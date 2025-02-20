@@ -15,7 +15,8 @@ class AccountListCreateView(generics.ListCreateAPIView):
 # able to retrieve, update, and delete an account model.
 # 
 # When implementing Task 1, you can use either:
-# 1. Inherit the correct Django REST Framework Generic view(s) (https://www.django-rest-framework.org/api-guide/generic-views/#genericapiview)
+# 1. Inherit the correct Django REST Framework Generic view(s)
+#      (https://www.django-rest-framework.org/api-guide/generic-views/#genericapiview)
 # or
 # 2. Implement the `delete` method manually
 class AccountRetrieveUpdateDestroyView(generics.RetrieveAPIView):
@@ -35,6 +36,6 @@ class AccountRetrieveUpdateDestroyView(generics.RetrieveAPIView):
         serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-
+# Task 2: Implement the TransactionCreateView
 class TransactionCreateView():
     pass

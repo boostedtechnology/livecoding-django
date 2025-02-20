@@ -19,7 +19,8 @@ class TransactionSerializer(serializers.ModelSerializer):
         model = Transaction
         fields = ['description', 'entries']
 
-    # You may or may not want to implement these
+    # You may or may not want to implement these methods, depending on how you implement the TransactionCreateView
+    # for task 2.
 
     def validate_entries(self, entries):
         pass
